@@ -1,4 +1,16 @@
-Exploring recursive trait resolution.
+# Exploring recursive trait resolution.
+
+...for my own learning.
+
+The source file implements a JSON Writer trait for a primitive type, vector, and a map.
+
+We have a `write` method that is type constrained on having a JSON Writer implemnetation.
+
+We then use a value made up of int, vect, and hashmap and the rust compiler conjurs up the right mix of implementations
+to output the value.
+
+Running the program...
+
 
 ```
 $ cargo run
